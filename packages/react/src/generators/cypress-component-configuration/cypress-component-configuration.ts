@@ -9,10 +9,10 @@ import {
   updateJson,
   visitNotIgnoredFiles,
 } from '@nrwl/devkit';
-import componentTestGenerator from '@nrwl/react/src/generators/component-test/component-test';
-import { getComponentNode } from '@nrwl/react/src/utils/ast-utils';
 import * as ts from 'typescript';
+import { getComponentNode } from '../../utils/ast-utils';
 import { cypressReactVersion } from '../../utils/versions';
+import componentTestGenerator from '../component-test/component-test';
 import { CypressComponentConfigurationSchema } from './schema';
 
 const allowedFileExt = new RegExp(/\.[jt]sx?/g);
